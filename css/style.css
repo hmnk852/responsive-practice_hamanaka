@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.box-1 {
+  width: 400px;
+  height: 400px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+.box-2 {
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+  margin: 0 auto;
+}
+
+.margin-container {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+
+.box-3-1, .box-3-2 {
+  width: 200px;
+  height: 200px;
+}
+
+.box-3-1 {
+  background-color: #0008ff;
+}
+
+.box-3-2 {
+  background-color: #22ff00;
+}
+
+.float-container {
+  width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.box-4-1, .box-4-2 {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.box-4-1 {
+  background-color: #ff0000;
+}
+
+.box-4-2 {
+  background-color: #0008ff;
+}
+
+.flex-container-1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.flex-container-1 div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.box-5-1 { background-color: #ff0000; }
+.box-5-2 { background-color: #0008ff; }
+.box-5-3 { background-color: #ff8400; }
+
+.flex-container-2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.flex-container-2 div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-6-1 {
+  background-color: #00ff51;
+}
+
+.box-6-2 {
+  background-color: #d4ff00;
+}
+
+.box-6-3 {
+  background-color: #ff00e1;
+}
+
+.display-container {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.box-7-1, .box-7-3{
+  width: 200px;
+  height: 200px;
+}
+
+.box-7-1 {
+  background-color: #ff0000;
+}
+
+.box-7-2 {
+  background-color: #0008ff;
+}
+
+.box-7-3 {
+  background-color: #00ff51;
+}
+@media screen and (max-width: 959px) {
+  .box-1 {
+      width: 200px;
+      height: 200px;
+  }
+
+  .box-2 {
+      width: 300px;
+      height: 300px;
+      background-color: #007bff;
+  }
+
+  .margin-container {
+      gap: 20px;
+  }
+
+  .box-3-1, .box-3-2 {
+      width: 200px;
+      height: 200px;
+  }
+
+  .float-container {
+      width: 200px;
+  }
+
+  .box-4-1, .box-4-2 {
+      width: 200px;
+      height: 200px;
+      float: none;
+  }
+
+  .flex-container-1 {
+      flex-direction: row-reverse;
+  }
+
+  .flex-container-1 div {
+      width: 200px;
+      height: 200px;
+  }
+
+  .flex-container-2 div {
+      width: 200px;
+      height: 200px;
+  }
+
+  .box-6-1 { order: 2; }
+  .box-6-2 { order: 3; }
+  .box-6-3 { order: 1; }
+
+  .box-7-1 {
+      display: none;
+  }
+
+  .box-7-2 {
+      width: 200px;
+      height: 200px;
+  }
+
+  .box-7-3 {
+    width: 200px;
+    height: 200px;
+  }
+}
