@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* Q6が入れ替わらない？？？？*/
 h2 {
   text-align: center;
   margin: 20px 0;
@@ -22,12 +22,12 @@ h2 {
 .margin-container {
   display: flex;
   justify-content: center;
-  gap: 150px;
 }
 
 .box-3-1, .box-3-2 {
   width: 200px;
   height: 200px;
+  margin: 0 75px;
 }
 
 .box-3-1 {
@@ -60,9 +60,7 @@ h2 {
 
 .flex-container-1 {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 600px;
+  justify-content: center; /* Q5: 通常時にも記述 */
 }
 
 .flex-container-1 div {
@@ -80,9 +78,7 @@ h2 {
 
 .flex-container-2 {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 600px;
+  justify-content: center; /* Q5: 通常時にも記述 */
 }
 
 .flex-container-2 div {
@@ -91,6 +87,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 0; /* Q6: 通常時にも記述 (初期値) */
 }
 
 .box-6-1 {
@@ -114,6 +111,7 @@ h2 {
 .box-7-1, .box-7-3{
   width: 200px;
   height: 200px;
+  display: block; /* Q7: 通常時にも記述 (表示) */
 }
 
 .box-7-1 {
@@ -134,18 +132,11 @@ h2 {
   }
 
   .box-2 {
-      width: 300px;
-      height: 300px;
       background-color: #007bff;
   }
 
-  .margin-container {
-      gap: 20px;
-  }
-
   .box-3-1, .box-3-2 {
-      width: 200px;
-      height: 200px;
+      margin: 0 25px;
   }
 
   .float-container {
@@ -153,8 +144,6 @@ h2 {
   }
 
   .box-4-1, .box-4-2 {
-      width: 200px;
-      height: 200px;
       float: none;
   }
 
@@ -172,9 +161,9 @@ h2 {
       height: 200px;
   }
 
-  .box-6-1 { order: 2; }
-  .box-6-2 { order: 3; }
-  .box-6-3 { order: 1; }
+  .flex-container-2 > .box-6-1 { order: 2; }
+  .flex-container-2 > .box-6-2 { order: 3; }
+  .flex-container-2 > .box-6-3 { order: 1; }
 
   .box-7-1 {
       display: none;
