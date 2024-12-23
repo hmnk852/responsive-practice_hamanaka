@@ -1,19 +1,20 @@
 @charset "UTF-8";
+
 h2 {
   text-align: center;
   margin: 20px 0;
 }
 
 .box-1 {
-  width: 400px;
-  height: 400px;
+  width: 400px; /* レスポンシブ前 */
+  height: 400px; /* レスポンシブ前 */
   background-color: #ff0000;
   margin: 0 auto;
 }
 
 .box-2 {
-  width: 300px;
-  height: 300px;
+  width: 300px; /* レスポンシブ前 */
+  height: 300px; /* レスポンシブ前 */
   background-color: #ff0000;
   margin: 0 auto;
 }
@@ -24,9 +25,9 @@ h2 {
 }
 
 .box-3-1, .box-3-2 {
-  width: 200px;
-  height: 200px;
-  margin: 0 75px;
+  width: 200px; /* レスポンシブ前 */
+  height: 200px; /* レスポンシブ前 */
+  margin: 0 75px; /* レスポンシブ前 */
 }
 
 .box-3-1 {
@@ -38,15 +39,15 @@ h2 {
 }
 
 .float-container {
-  width: 400px;
+  width: 400px; /* レスポンシブ前 */
   margin: 0 auto;
   overflow: hidden;
 }
 
 .box-4-1, .box-4-2 {
-  width: 200px;
-  height: 200px;
-  float: left;
+  width: 200px; /* レスポンシブ前 */
+  height: 200px; /* レスポンシブ前 */
+  float: left; /* レスポンシブ前 */
 }
 
 .box-4-1 {
@@ -59,12 +60,13 @@ h2 {
 
 .flex-container-1 {
   display: flex;
-  justify-content: center; /* Q5: 通常時にも記述 */
+  justify-content: center;
+  flex-direction: row; /* レスポンシブ前：明示的に指定 */
 }
 
 .flex-container-1 div {
-  width: 200px;
-  height: 200px;
+  width: 200px; /* レスポンシブ前 */
+  height: 200px; /* レスポンシブ前 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,16 +79,17 @@ h2 {
 
 .flex-container-2 {
   display: flex;
-  justify-content: center; /* Q5: 通常時にも記述 */
+  justify-content: center;
+  flex-direction: row; /* レスポンシブ前：明示的に指定 */
 }
 
 .flex-container-2 div {
-  width: 200px;
-  height: 200px;
+  width: 200px; /* レスポンシブ前 */
+  height: 200px; /* レスポンシブ前 */
   display: flex;
   justify-content: center;
   align-items: center;
-  order: 0; /* Q6: 通常時にも記述 (初期値) */
+  order: 0; /* レスポンシブ前 */
 }
 
 .box-6-1 {
@@ -108,9 +111,9 @@ h2 {
 }
 
 .box-7-1, .box-7-3{
-  width: 200px;
-  height: 200px;
-  display: block; /* Q7: 通常時にも記述 (表示) */
+  width: 200px; /* レスポンシブ前 */
+  height: 200px; /* レスポンシブ前 */
+  display: block; /* レスポンシブ前 */
 }
 
 .box-7-1 {
@@ -118,12 +121,15 @@ h2 {
 }
 
 .box-7-2 {
+  width: 200px; /* レスポンシブ前 */
+  height: 200px; /* レスポンシブ前 */
   background-color: #0008ff;
 }
 
 .box-7-3 {
   background-color: #00ff51;
 }
+
 @media screen and (max-width: 959px) {
   .box-1 {
       width: 200px;
